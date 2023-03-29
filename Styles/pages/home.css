@@ -1,0 +1,134 @@
+main {
+  height: 100%;
+  /*  font-family */
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+main section {
+  /*  grid-section for mobile view */
+}
+main section .container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.5fr 1.5fr 0.3fr 0.5fr;
+  grid-template-areas: "content-1" "content-2" "content-3" "content-4";
+  gap: 0px 0px;
+  justify-items: center;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+main section .container .content-1 {
+  grid-area: content-1;
+  margin-top: 20px;
+}
+main section .container .content-1 h1 {
+  font-size: 22px;
+}
+main section .container .content-1 h1 span {
+  display: inline-block;
+  color: rgb(210, 107, 124);
+  text-shadow: 1px 2px 3px white;
+  animation: poyo3 2.5s infinite;
+  opacity: 1;
+}
+main section .container .content-2 {
+  grid-area: content-2;
+  margin-bottom: 10px;
+  /*  home-image */
+}
+main section .container .content-2 img {
+  height: 280px;
+  width: 300px;
+  border-radius: 10px;
+  opacity: 0.8;
+}
+main section .container .content-3 {
+  grid-area: content-3;
+}
+main section .container .content-3 h2 {
+  font-size: 20px;
+  text-align: center;
+  margin-top: 4px;
+}
+main section .container .content-4 {
+  grid-area: content-4;
+  margin-bottom: 22px;
+  /*  programming language icons  */
+}
+main section .container .content-4 p {
+  font-size: 18px;
+}
+main section .container .content-4 .fa-brands {
+  font-size: 34px;
+  letter-spacing: 10px;
+}
+
+/*  animation keyframes */
+@keyframes poyo3 {
+  0%, 40% {
+    transform: skew(0deg, 0deg);
+  }
+  5% {
+    transform: skew(5deg, 5deg);
+  }
+  10% {
+    transform: skew(-4deg, -4deg);
+  }
+  15% {
+    transform: skew(3deg, 3deg);
+  }
+  20% {
+    transform: skew(-2deg, -2deg);
+  }
+  25% {
+    transform: skew(1deg, 1deg);
+  }
+  30% {
+    transform: skew(-0.6deg, -0.6deg);
+  }
+  35% {
+    transform: skew(0.3deg, 0.3deg);
+  }
+}
+/*  media screen for desktop view */
+@media screen and (min-width: 1280px) {
+  main {
+    background-image: url(/images/laptop1.jpg);
+  }
+  main section {
+    /*  background-color to make background-image opaciy */
+    background-color: rgba(255, 255, 255, 0.74);
+    /*  grid-section for desktop view */
+  }
+  main section .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "content-1" "content-3" "content-4";
+    gap: 0px 0px;
+    justify-items: center;
+    /*  to make image for mobile view invisible */
+  }
+  main section .container .content-1 h1 {
+    font-size: 60px;
+  }
+  main section .container .content-2 img {
+    display: none;
+  }
+  main section .container .content-3 h2 {
+    font-size: 40px;
+  }
+  main section .container .content-4 {
+    /* programming language icons   */
+  }
+  main section .container .content-4 p {
+    font-weight: bold;
+  }
+  main section .container .content-4 .fa-brands {
+    font-size: 70px;
+    letter-spacing: 30px;
+    font-weight: bold;
+  }
+  main section .container .content-4 span {
+    font-weight: bold;
+  }
+}/*# sourceMappingURL=home.css.map */

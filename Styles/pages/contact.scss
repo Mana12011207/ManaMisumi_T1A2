@@ -1,0 +1,75 @@
+@import "../defaults/color";
+@import "../defaults/breakpoint";
+
+main {
+    /*  font-family */
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    /*  page-title */
+    #contact-title {
+        color: black;
+        border-bottom: 6px solid;
+        border-image: linear-gradient(-20deg, #616161 0%, #9bc5c3 100%);
+        border-image-slice: 0.5;
+        font-weight: lighter;
+        margin-top: 18px;
+        margin-bottom: 24px;
+        text-align: left;
+    }
+
+    /*  contact-form */
+    form {
+        .form-items {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 24px;
+
+            label {
+                font-size: 1.2rem;
+                font-weight: bold;
+                color: black;
+            }
+
+            .form-input {
+                border: 2px solid black;
+                border-radius: 4px;
+                outline: none;
+                font-size: 1.2rem;
+                width: 300px;
+
+                &:not(.form-textarea) {
+                    height: 32px;
+                }
+
+                &:focus {
+                    box-shadow: $tertiary-backgroundcolor 0 0 3px 3px;
+                }
+            }
+        }
+
+        .submit-button {
+            text-align: center;
+
+            /*  submit-button styles*/
+            #submit {
+                font-size: 24px;
+                border: 1px solid;
+                border-radius: 4px;
+                background-color: $tertiary-backgroundcolor;
+                border: none;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                margin-bottom: 10px;
+
+
+                &:hover {
+                    cursor: pointer;
+                    opacity: 0.5;
+                    border: none;
+                }
+            }
+        }
+    }
+}

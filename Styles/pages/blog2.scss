@@ -1,0 +1,113 @@
+@import "../defaults/color";
+@import "../defaults/breakpoint";
+
+main {
+    /*  font-family */
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+    section {
+        margin-left: 30px;
+        margin-right: 40px;
+
+        /*  page-title */
+        .blog-title {
+            border-bottom: 6px solid;
+            border-image: linear-gradient(-20deg, #616161 0%, #9bc5c3 100%);
+            border-image-slice: 0.5;
+            font-weight: lighter;
+            margin-top: 32px;
+        }
+
+        .entry {
+            text-align: center;
+            margin-bottom: 58px;
+
+            /*  entry-titles */
+            .title {
+                margin-top: 42px;
+                margin-bottom: 12px;
+                text-align: center;
+                font-size: 24px;
+            }
+
+            /*  date to post */
+            .posted-on {
+                text-align: center;
+                font-size: 12px;
+                margin-bottom: 8px;
+
+                /*  calender-icon for date */
+                .fa-regular {
+                    margin-right: 4px;
+                }
+            }
+
+            /*  entry-images */
+            .images {
+                margin-top: 0px;
+                height: 200px;
+                width: 180px;
+                border-image-source: repeating-linear-gradient(45deg, #a69e9e, #fff 3px, rgba(0 0 0 / 0) 0, rgba(0 0 0 / 0) 6px);
+                border-image-slice: 20;
+                border-image-repeat: round;
+                border-style: solid;
+                border-width: 20px;
+            }
+
+            /*  posts */
+            article {
+                margin: 10px auto;
+                line-height: 1.2;
+                text-align: justify;
+                text-justify: inter-ideograph;
+                border-bottom: 1px solid rgb(91, 91, 140);
+            }
+        }
+    }
+}
+
+
+/*  madia screen for desktop view */
+@media screen and (min-width: $large) {
+    main {
+        section {
+            .blog-title {
+                margin-top: 42px;
+                margin-bottom: 58px;
+            }
+
+            .entry {
+                margin-bottom: 100px;
+
+                /*  entry-titles */
+                .title {
+                    font-size: 42px;
+                    text-align: center;
+                }
+
+                /*  date to post */
+                .posted-on {
+                    text-align: center;
+                    font-size: 18px;
+                    margin-bottom: 18px;
+                }
+
+                /*  entry-images */
+                .images {
+                    height: 420px;
+                    width: 420px;
+                }
+
+                /*  posts */
+                article {
+                    width: 500px;
+                    margin: 10px auto;
+                    font-size: 18px;
+                    line-height: 1.5;
+
+                }
+            }
+        }
+    }
+
+}

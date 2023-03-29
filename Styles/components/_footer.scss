@@ -1,0 +1,34 @@
+@import "../defaults/color";
+@import "../defaults/breakpoint";
+
+footer {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: $primary-backgroundcolor;
+    padding: 16px;
+    text-align: center;
+    color: $secondary-textcolor;
+
+/*  github and linkdin icon */
+    .social-media {
+        font-size: 32px;
+        letter-spacing: 0.5em;
+    }
+
+    .info {
+        .contact {
+            font-size: 18px;
+            font-weight: bold;
+        }
+    }
+}
+
+/*  media screen for desktop view */
+@media screen and (min-width: $large) {
+    footer {
+        .info {
+            .contact {
+                font-size: 20px;
+            }
+        }
+    }
+}
