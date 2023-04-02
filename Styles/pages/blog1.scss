@@ -1,5 +1,6 @@
 @import "../defaults/color";
 @import "../defaults/breakpoint";
+@import "../index";
 
 main {
     /*  font-family */
@@ -9,7 +10,7 @@ main {
         margin-left: 30px;
         margin-right: 40px;
 
-        /*  page-title */
+  /*  Text components-7 Page title*/
         .blog-title {
             border-bottom: 6px solid;
             border-image: linear-gradient(-20deg, #616161 0%, #9bc5c3 100%);
@@ -17,12 +18,13 @@ main {
             font-weight: lighter;
             margin-top: 32px;
         }
-
+  /*  Graphical components-7 Blog content */
         .entry {
             text-align: center;
             margin-bottom: 58px;
 
-            /*  entry-titles */
+
+
             .title {
                 margin-top: 42px;
                 margin-bottom: 12px;

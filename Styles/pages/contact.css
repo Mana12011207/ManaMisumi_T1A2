@@ -1,11 +1,167 @@
+footer {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  background-color: rgb(245, 245, 245);
+  padding: 16px;
+  text-align: center;
+  color: teal;
+  /*  github and linkdin icon */
+}
+footer .social-media {
+  font-size: 32px;
+  letter-spacing: 0.5em;
+}
+footer .info .contact {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/*  media screen for desktop view */
+@media screen and (min-width: 1280px) {
+  footer .info .contact {
+    font-size: 20px;
+  }
+}
+header {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  background-color: rgb(245, 245, 245);
+  width: 100%;
+  height: 160px;
+  /*  header-navigation */
+}
+header .name {
+  font-size: 30px;
+  color: rgb(210, 107, 124);
+  margin-top: 8px;
+  margin-left: 16px;
+  font-weight: bold;
+}
+header .name #first-name {
+  margin: 0;
+  margin-top: 20px;
+  padding-bottom: 0;
+}
+header .name #last-name {
+  margin-top: 0;
+  padding-top: 0;
+  position: absolute;
+  left: 50px;
+}
+header .navi-bar {
+  width: 100%;
+  height: 42px;
+  padding-top: 62px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+header .navi-bar a {
+  font-size: 18px;
+  font-weight: bold;
+  color: teal;
+  text-decoration: none;
+  margin-right: 10px;
+  /*  navigation-icons */
+}
+header .navi-bar a:hover {
+  cursor: pointer;
+}
+header .navi-bar a .fa-solid {
+  margin-left: 8px;
+  font-size: 12px;
+}
+
+/*  media screen for tablet view */
+@media screen and (min-width: 768px) {
+  header .name {
+    font-size: 40px;
+  }
+  header .navi-bar {
+    text-align: right;
+  }
+  header .navi-bar a {
+    font-size: 22px;
+    margin-right: 24px;
+  }
+}
+/*  media screen for desktop view */
+@media screen and (min-width: 1280px) {
+  header {
+    /*  header-navigation */
+  }
+  header .name {
+    font-size: 50px;
+    margin-left: 50px;
+    font-weight: bold;
+    margin-top: 0px;
+  }
+  header .name #last-name {
+    margin-top: 0;
+    padding-top: 0;
+    position: absolute;
+    left: 60px;
+  }
+  header .navi-bar {
+    width: 100%;
+    height: 55px;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    text-align: right;
+  }
+  header .navi-bar a {
+    font-size: 25px;
+    font-weight: bold;
+    color: teal;
+    text-decoration: none;
+    margin-right: 150px;
+    /*  navigation-icons */
+  }
+  header .navi-bar a:hover {
+    cursor: pointer;
+  }
+  header .navi-bar a .fa-solid {
+    margin-right: 8px;
+    font-size: 20px;
+  }
+}
+footer {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  background-color: rgb(245, 245, 245);
+  padding: 16px;
+  text-align: center;
+  color: teal;
+  /*  github and linkdin icon */
+}
+footer .social-media {
+  font-size: 32px;
+  letter-spacing: 0.5em;
+}
+footer .info .contact {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/*  media screen for desktop view */
+@media screen and (min-width: 1280px) {
+  footer .info .contact {
+    font-size: 20px;
+  }
+}
+body {
+  margin: 0;
+  background-color: snow;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 main {
   /*  font-family */
   font-family: Georgia, "Times New Roman", Times, serif;
   display: flex;
   flex-direction: column;
   align-items: center;
-  /*  page-title */
-  /*  contact-form */
+  /*  Text components-9 Page title */
+  /*  Graphical components-8 Input forms */
 }
 main #contact-title {
   color: black;
@@ -43,7 +199,7 @@ main form .form-items .form-input:focus {
 }
 main form .submit-button {
   text-align: center;
-  /*  submit-button styles*/
+  /*  Graphical components-9 Submit button */
 }
 main form .submit-button #submit {
   font-size: 24px;
